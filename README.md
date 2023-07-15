@@ -4,6 +4,10 @@
 > Запуск Jango проекта через **Run - "название проекта"**
 > или командой **python manage.py runserver** 
 
+> homework_django - config проекта
+
+> catalog - первое приложение проекта
+
 <br>
 
 ### **Цель проекта:**

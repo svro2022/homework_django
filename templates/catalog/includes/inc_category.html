@@ -5,8 +5,8 @@
         </div>
         <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
-                {{ object.description }}
-                <li>Some test text</li>
+                {{ object.description|truncatechars:100 }}
+                <li>Категории</li>
             </ul>
             <a href="{% url 'catalog:category_products' object.pk %}" type="button" class="w-100 btn btn-lg btn-primary">Перейти к товарам</a>
         </div>

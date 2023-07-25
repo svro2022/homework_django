@@ -21,22 +21,25 @@
 
                         <ul class="list-unstyled mt-3 mb-4">
 
-
-                                {{ object.description|truncatechars:100 }}
-                                <li>Примечание: продукты в категориях</li>
+                            {{ object.description|truncatechars:100 }}
+                                <li>Примечание: карточки всех товаров</li>
 
                         </ul>
                     <a href="{% url 'catalog:product_detailed' object.pk %}" type="button" class="w-100 btn btn-lg btn-primary">Подробнее о товаре</a>
 
                     </div>
                 </div>
+
             </div>
+
 
         {% endfor %}
 
 
 
     </div>
+
+
 
 
 

@@ -80,7 +80,7 @@ class CategoryProductsListView(ListView):
 
         category_item = Category.objects.get(pk=self.kwargs.get('pk'))
         context_data['category_pk'] = category_item.pk,
-        context_data['title'] = f'Товары из {category_item.name}',
+        context_data['title'] = f'Товары из {category_item.name}'
         context_data['title_text'] = f'Добро пожаловать! Выбираем нужный Вам товар.'
 
         return context_data
